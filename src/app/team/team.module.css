@@ -1,0 +1,64 @@
+.teamContainer {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #0a051b, #1e1e2f, #6366f1); /* Static gradient background */
+}
+
+.heading {
+  font-size: 3.5rem; /* Increased font size */
+  font-weight: 800;
+  margin-bottom: 4rem; /* Increased margin for more space below */
+  color: #e2e8f0;
+  text-shadow: 0 0 10px rgba(99, 102, 241, 0.5); /* Added text shadow for depth */
+}
+
+.teamGrid {
+  display: flex; /* Use flexbox for side-by-side layout */
+  justify-content: space-around; /* Space out the grids */
+  gap: 2rem; /* Adjusted gap for better spacing */
+  margin: 0 2rem; /* Added margin for equal spacing on sides */
+}
+
+.teamMember {
+  display: flex; /* Use flexbox for horizontal layout */
+  align-items: center; /* Center items vertically */
+  background: rgba(255, 255, 255, 0.1); /* Light background for contrast */
+  border-radius: 15px;
+  padding: 1rem; /* Adjusted padding */
+  width: 750px; /* Increased width for uniformity */
+  height: 400px; /* Set a fixed height for uniformity */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.memberImage {
+  border-radius: 15px; /* Rounded corners for the image */
+  width: 320px; /* Adjusted width for the image */
+  height: auto; /* Set a fixed height for the image */
+  object-fit: cover; /* Maintain aspect ratio */
+  margin: 0; /* Remove spacing around the image */
+}
+
+.memberInfo {
+  text-align: left; /* Align text to the left */
+  margin-left: 20px; /* Move text to the right slightly */
+}
+
+.memberName {
+  font-size: 2rem; /* Adjusted font size */
+  font-weight: 700;
+  color: #ffffff; /* White color for better contrast */
+  margin-top: 10px; /* Space above the name */
+  text-shadow: 0 0 5px rgba(99, 102, 241, 0.5); /* Added text shadow for depth */
+}
+
+.memberPosition {
+  font-size: 1.2rem; /* Adjusted font size */
+  color: #e2e8f0;
+  margin: 0.5rem 0; /* Space around position */
+}
+
+.memberDescription {
+  color: #a0aec0;
+  line-height: 1.5;
+  margin-top: 0.5rem; /* Space above description */
+}
