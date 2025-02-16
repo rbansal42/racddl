@@ -1,15 +1,15 @@
 .teamContainer {
   padding: 4rem 2rem;
   text-align: center;
-  background: linear-gradient(135deg, #0a051b, #1e1e2f, #6366f1); /* Static gradient background */
+  background: linear-gradient(135deg, #0a051b, #1e1e2f, #190138); /* Static gradient background */
 }
 
 .heading {
-  font-size: 3.5rem; /* Increased font size */
+  font-size: 4.5rem; /* Increased font size */
   font-weight: 800;
   margin-bottom: 4rem; /* Increased margin for more space below */
   color: #e2e8f0;
-  text-shadow: 0 0 10px rgba(99, 102, 241, 0.5); /* Added text shadow for depth */
+  text-shadow: 0 0 30px rgba(149, 150, 211, 0.5); /* Added text shadow for depth */
 }
 
 .teamGrid {
@@ -61,4 +61,63 @@
   color: #a0aec0;
   line-height: 1.5;
   margin-top: 0.5rem; /* Space above description */
+}
+
+.coreTeamGrid {
+  display: flex; /* Use flexbox for side-by-side layout */
+  justify-content: space-between; /* Space out the boxes evenly */
+  margin: 1rem 0; /* Margin for spacing */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.coreTeamMember {
+  position: relative; /* Position for overlapping */
+  margin: auto; /* Margin for spacing */
+  display: flex; /* Use flexbox for vertical alignment */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center items horizontally */
+  width: 150px; /* Set width for the square container */
+}
+.squareContainer {
+    background: linear-gradient(180deg, #7d7693, #2b2b5c, #190138);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 300px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Ensures child elements are positioned relative to this */
+    z-index: 1; /* Keep it below the image */
+    margin-top: 140px; /* Adjust spacing */
+  }
+  
+  .coreMemberImage {
+    margin-top: 80px;
+    width: 350px; /* Adjust size */
+    height: auto; /* Adjust size */
+    object-fit: cover;
+    position: absolute; /* Position relative to .squareContainer */
+    top: -60px; /* Moves it up to overlap */
+    left: 40%; /* Centers it */
+    transform: translateX(-50%); /* Ensures proper centering */
+    z-index: 2; /* Places it above the container */
+    border-radius: 50%; /* If you want it circular */
+  }
+  
+
+.coreMemberName {
+  font-size: 1.8rem; /* Adjusted font size */
+  font-weight: 700;
+  color: #ffffff; /* White color for better contrast */
+  margin-top: 40px; /* No margin */
+  text-align: center; /* Center text */
+}
+
+.coreMemberPosition {
+  font-size: 1.2rem; /* Adjusted font size */
+  color: #b2c4dc;
+  margin: 0; /* No margin */
+  text-align: center; /* Center text */
 }
