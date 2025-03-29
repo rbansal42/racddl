@@ -4,6 +4,8 @@ import Masonry from 'react-masonry-css';
 import { useRouter } from 'next/navigation';
 import styles from './projects.module.css';
 import EcoSevika from './ecosevika/page';
+import Image from 'next/image';
+
 const projectCards = [
   {
     title: "EcoSevika",
@@ -71,7 +73,13 @@ const EventCard = ({ event }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <img src={event.image} alt={event.title} className={styles.eventImage} />
+      <Image 
+        src={event.image} 
+        alt={event.title} 
+        width={400}
+        height={300}
+        className={styles.eventImage}
+      />
       <div className={`${styles.eventOverlay} ${isHovered ? styles.showOverlay : ''}`}>
         <h3 className={styles.eventTitle}>{event.title}</h3>
         <p className={styles.eventDescription}>{event.description}</p>

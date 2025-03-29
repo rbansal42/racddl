@@ -149,7 +149,13 @@ const Team = () => {
         <div className={styles.teamGrid}>
           {teamMembers.map((member, index) => (
             <div className={styles.teamMember} key={index}>
-              <img src={member.image} alt={member.name} className={styles.memberImage} />
+              <Image 
+                src={member.image} 
+                alt={member.name} 
+                width={300}
+                height={300}
+                className={styles.memberImage} 
+              />
               <div className={styles.memberInfo}>
                 <h2 className={styles.memberName}>{member.name}</h2>
                 <h3 className={styles.memberPosition}>{member.position}</h3>
@@ -165,7 +171,13 @@ const Team = () => {
               <h2 className={styles.coreMemberName}>{coreMember.name}</h2>
               <h3 className={styles.coreMemberPosition}>{coreMember.position}</h3>
             </div>
-            <img src={coreMember.image} alt={coreMember.name} className={styles.coreMemberImage} />
+            <Image 
+              src={coreMember.image} 
+              alt={coreMember.name} 
+              width={200}
+              height={200}
+              className={styles.coreMemberImage} 
+            />
           </div>
         ))}
       </div>
@@ -176,7 +188,13 @@ const Team = () => {
       <div className={styles.advisoryGrid}>
         {advisors.map((advisor, index) => (
           <div className={styles.advisoryMember} key={index}>
-            <img src={advisor.image} alt={advisor.name} className={styles.advisoryImage} />
+            <Image 
+              src={advisor.image} 
+              alt={advisor.name} 
+              width={150}
+              height={150}
+              className={styles.advisoryImage} 
+            />
             <h2 className={styles.advisoryName}>{advisor.name}</h2>
             <h3 className={styles.advisoryPosition}>{advisor.position}</h3>
           </div>
@@ -188,7 +206,13 @@ const Team = () => {
       <div className={styles.directorGrid}>
         {directors.map((director, index) => (
           <div className={styles.directorMember} key={index}>
-            <img src={director.image} alt={director.name} className={styles.directorImage} />
+            <Image 
+              src={director.image} 
+              alt={director.name} 
+              width={150}
+              height={150}
+              className={styles.directorImage} 
+            />
             <h2 className={styles.directorName}>{director.name}</h2>
             <h3 className={styles.directorPosition}>{director.position}</h3>
           </div>

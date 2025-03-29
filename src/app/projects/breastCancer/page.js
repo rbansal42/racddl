@@ -48,15 +48,36 @@ const BreastCancer = () => {
                     <div className={styles.imageTrack}>
                         {/* First set of images */}
                         {images.map((img, index) => (
-                            <img key={`first-${index}`} src={img} className={styles.sliderImage} alt="Campaign Moments" />
+                            <Image 
+                                key={`first-${index}`} 
+                                src={img} 
+                                width={300}
+                                height={200}
+                                className={styles.sliderImage} 
+                                alt="Campaign Moments" 
+                            />
                         ))}
                         {/* Second set of images */}
                         {images.map((img, index) => (
-                            <img key={`second-${index}`} src={img} className={styles.sliderImage} alt="Campaign Moments" />
+                            <Image 
+                                key={`second-${index}`} 
+                                src={img} 
+                                width={300}
+                                height={200}
+                                className={styles.sliderImage} 
+                                alt="Campaign Moments" 
+                            />
                         ))}
                         {/* Third set for smooth transition */}
                         {images.map((img, index) => (
-                            <img key={`third-${index}`} src={img} className={styles.sliderImage} alt="Campaign Moments" />
+                            <Image 
+                                key={`third-${index}`} 
+                                src={img} 
+                                width={300}
+                                height={200}
+                                className={styles.sliderImage} 
+                                alt="Campaign Moments" 
+                            />
                         ))}
                     </div>
                 </motion.div>
@@ -113,7 +134,12 @@ const BreastCancer = () => {
                         </ul>
                     </div>
                     <div className={styles.missionImage}>
-                        <img src="/mission-image.jpg" alt="Our Mission in Action" />
+                        <Image 
+                            src="/mission-image.jpg" 
+                            alt="Our Mission in Action" 
+                            width={400}
+                            height={300}
+                        />
                     </div>
                 </div>
             </div>

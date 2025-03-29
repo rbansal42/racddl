@@ -1,7 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import styles from './about.module.css';
 import { motion } from 'framer-motion';
 
 const About = () => {
@@ -44,7 +43,7 @@ const About = () => {
         </h1>
         
         <p className="text-xl text-center text-gray-600 italic mb-12">
-          "Leading with Purpose, Serving with Passion"
+          &ldquo;Leading with Purpose, Serving with Passion&rdquo;
         </p>
 
         {/* Our Goal Section */}

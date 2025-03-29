@@ -23,7 +23,13 @@ const RaktSetu = () => {
             {/* Header Section */}
             <div className={styles.headerSection}>
                 <div className={styles.logoContainer}>
-                    <img src="/raktSetu-logo.png" alt="RaktSetu Logo" className={styles.logo} />
+                    <Image 
+                        src="/raktSetu-logo.png" 
+                        alt="RaktSetu Logo" 
+                        width={200}
+                        height={200}
+                        className={styles.logo} 
+                    />
                 </div>
                 <h2 className={styles.subtitle}>Building a Bridge of Life</h2>
             </div>
@@ -76,7 +82,12 @@ const RaktSetu = () => {
                         </ul>
                     </div>
                     <div className={styles.missionImage}>
-                        <img src="/blood-donation.jpg" alt="Blood Donation Camp" />
+                        <Image 
+                            src="/blood-donation.jpg" 
+                            alt="Blood Donation Camp" 
+                            width={400}
+                            height={300}
+                        />
                     </div>
                 </div>
             </div>

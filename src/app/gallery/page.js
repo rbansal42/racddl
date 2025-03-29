@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import styles from './gallery.module.css';
+import Image from 'next/image';
 
 const images = [
   '/galleryImages/_MG_4857.jpg',
@@ -81,9 +82,11 @@ const Page = () => {
               key={index}
               className={`${styles.imageContainer} ${getRandomSize()}`}
             >
-              <img 
+              <Image 
                 src={image} 
                 alt={`Gallery ${index + 1}`} 
+                width={400}
+                height={300}
                 className={styles.image}
               />
             </div>

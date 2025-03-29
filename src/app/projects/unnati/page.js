@@ -63,15 +63,36 @@ const Unnati = () => {
           <div className={styles.imageTrack}>
             {/* First set of images */}
             {images.map((img, index) => (
-              <img key={`first-${index}`} src={img} className={styles.sliderImage} alt="Project Action" />
+              <Image 
+                key={`first-${index}`} 
+                src={img} 
+                width={300}
+                height={200}
+                className={styles.sliderImage} 
+                alt="Project Action" 
+              />
             ))}
             {/* Second set of images */}
             {images.map((img, index) => (
-              <img key={`second-${index}`} src={img} className={styles.sliderImage} alt="Project Action" />
+              <Image 
+                key={`second-${index}`} 
+                src={img} 
+                width={300}
+                height={200}
+                className={styles.sliderImage} 
+                alt="Project Action" 
+              />
             ))}
             {/* Third set of images for seamless loop */}
             {images.map((img, index) => (
-              <img key={`third-${index}`} src={img} className={styles.sliderImage} alt="Project Action" />
+              <Image 
+                key={`third-${index}`} 
+                src={img} 
+                width={300}
+                height={200}
+                className={styles.sliderImage} 
+                alt="Project Action" 
+              />
             ))}
           </div>
         </motion.div>
@@ -137,31 +158,56 @@ const Unnati = () => {
         <div className={styles.partnersGrid}>
           <div className={styles.partnerCard}>
             <div className={styles.logoPlaceholder}>
-              <img src="/unnati/partners/Bal Bhavan.png" alt="Bal Bhawan International School" />
+              <Image 
+                src="/unnati/partners/Bal Bhavan.png" 
+                alt="Bal Bhawan International School" 
+                width={150}
+                height={150}
+              />
             </div>
             <p>Bal Bhawan International School, Dwarka</p>
           </div>
           <div className={styles.partnerCard}>
             <div className={styles.logoPlaceholder}>
-              <img src="/unnati/partners/NC Jindal.png" alt="NC Jindal Public School" />
+              <Image 
+                src="/unnati/partners/NC Jindal.png" 
+                alt="NC Jindal Public School" 
+                width={150}
+                height={150}
+              />
             </div>
             <p>NC Jindal Public School, Punjabi Bagh</p>
           </div>
           <div className={styles.partnerCard}>
             <div className={styles.logoPlaceholder}>
-              <img src="/unnati/partners/The Maurya.png" alt="The Maurya School" />
+              <Image 
+                src="/unnati/partners/The Maurya.png" 
+                alt="The Maurya School" 
+                width={150}
+                height={150}
+              />
             </div>
             <p>The Maurya School,<br />F-Block, Palam Vihar, Gurgaon</p>
           </div>
           <div className={styles.partnerCard}>
             <div className={styles.logoPlaceholder}>
-              <img src="/unnati/partners/Amity International.png" alt="Amity International School" />
+              <Image 
+                src="/unnati/partners/Amity International.png" 
+                alt="Amity International School" 
+                width={150}
+                height={150}
+              />
             </div>
             <p>Amity International School, Sector 43, Gurugram</p>
           </div>
           <div className={styles.partnerCard}>
             <div className={styles.logoPlaceholder}>
-              <img src="/unnati/partners/Army Public School.png" alt="Army Public School" />
+              <Image 
+                src="/unnati/partners/Army Public School.png" 
+                alt="Army Public School" 
+                width={150}
+                height={150}
+              />
             </div>
             <p>Army Public School, Delhi Cantt</p>
           </div>

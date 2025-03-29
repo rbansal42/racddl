@@ -1,6 +1,7 @@
 "use client"; // Required for Turbopack compatibility
 import React from "react";
 import styles from "./ecosevika.module.css";
+import Image from 'next/image';
 
 const activities = [
   {
@@ -46,7 +47,13 @@ const EcoSevika = () => {
       {/* Header Section */}
       <div className={styles.headerSection}>
         <div className={styles.logoContainer}>
-          <img src="/ecosevika-logo.png" alt="EcoSevika Logo" className={styles.logo} />
+          <Image 
+            src="/ecosevika-logo.png" 
+            alt="EcoSevika Logo" 
+            width={200}
+            height={200}
+            className={styles.logo} 
+          />
         </div>
         <h2 className={styles.subtitle}>Empowering Women, Upcycling Futures</h2>
       </div>
@@ -55,7 +62,12 @@ const EcoSevika = () => {
       <div className={styles.imageGrid}>
         {activities.map((activity, index) => (
           <div key={index} className={styles.imageContainer}>
-            <img src={activity.image} alt={activity.title} />
+            <Image 
+              src={activity.image} 
+              alt={activity.title} 
+              width={300}
+              height={200}
+            />
             <div className={styles.imageOverlay}>
               <span className={styles.imageTitle}>{activity.title}</span>
             </div>
@@ -68,7 +80,7 @@ const EcoSevika = () => {
         <div className={styles.textBox}>
           <h2 className={styles.sectionTitle}>About EcoSevika</h2>
           <p className={styles.sectionText}>
-          Eco Sevika is a transformative initiative by the Rotaract Club of Delhi Dynamic Leaders dedicated to women’s empowerment and environmental sustainability. This project upcycles discarded bedsheets into eco-friendly cloth bags, providing underprivileged women with a stable livelihood and vocational skills. By blending skill development, financial independence, and environmental impact, Eco Sevika has empowered 20+ women, replaced 5,000+ plastic bags, and upcycled 500+ kg of fabric. Through strategic collaborations, training programs, and sustainable business models, the project fosters self-reliance, circular economy, and community upliftment - proving that small steps can create a lasting impact.
+          Eco Sevika is a transformative initiative by the Rotaract Club of Delhi Dynamic Leaders dedicated to women's empowerment and environmental sustainability. This project upcycles discarded bedsheets into eco-friendly cloth bags, providing underprivileged women with a stable livelihood and vocational skills. By blending skill development, financial independence, and environmental impact, Eco Sevika has empowered 20+ women, replaced 5,000+ plastic bags, and upcycled 500+ kg of fabric. Through strategic collaborations, training programs, and sustainable business models, the project fosters self-reliance, circular economy, and community upliftment - proving that small steps can create a lasting impact.
           </p>
         </div>
 
@@ -93,7 +105,7 @@ const EcoSevika = () => {
           </p>
           <ul className={styles.impactList}>
             <li>20+ Women Empowered – More than 20 women from marginalized backgrounds have been trained in sewing and upcycling, providing them with a stable source of income to support their families.</li>
-            <li>5,000+ Plastic Bags Replaced – By using Eco Sevika’s cloth bags, we have successfully reduced the usage of plastic bags by 5,000+ in our community.</li>
+            <li>5,000+ Plastic Bags Replaced – By using Eco Sevika's cloth bags, we have successfully reduced the usage of plastic bags by 5,000+ in our community.</li>
             <li>100+ kg of Fabric Upcycled – The project has upcycled 500+ kg of fabric, diverting waste from landfills and promoting a circular economy.</li>
             <li>500+ Cloth Bags Produced – Eco Sevika has produced 500+ cloth bags, which have been distributed to the community, local markets, schools, and organizations.</li>
             <li>50+ Volunteers – Team Eco Sevika has 50+ volunteers who have been working towards the betterment of the community.</li>
