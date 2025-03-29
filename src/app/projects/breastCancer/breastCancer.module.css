@@ -1,0 +1,306 @@
+.pageContainer {
+    min-height: 100vh;
+    background: url('/breastCancer-bg.jpg') center center / cover no-repeat fixed;
+    position: relative;
+    padding: 2rem;
+    color: #000;
+}
+
+.backgroundOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 1;
+}
+
+.headerSection {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoContainer {
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.subtitle {
+    font-size: 2.2rem;
+    color: #E84B8A;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+/* Image Slider Styles */
+.sliderContainer {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    margin: 2rem 0;
+    background: #fff;
+    padding: 2rem 0;
+    border-radius: 16px;
+}
+
+.imageSlider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.imageTrack {
+    display: flex;
+    gap: 20px;
+    width: fit-content;
+    padding: 0 10px;
+}
+
+.sliderImage {
+    height: 300px;
+    width: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.contentSection {
+    position: relative;
+    z-index: 2;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.topRow {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+    align-items: stretch;
+    margin-bottom: 3rem;
+}
+
+/* About Card Styles */
+.infoCard {
+    background: #fff;
+    padding: 3rem;
+    border-radius: 20px;
+    position: relative;
+    color: #000;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.infoCard h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #E84B8A;
+    position: relative;
+    padding-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.infoCard h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 4px;
+    background: #E84B8A;
+}
+
+.infoCard p {
+    line-height: 1.8;
+    color: #000;
+    font-size: 1.1rem;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+/* Stats Card Styles */
+.statsCard {
+    background: #fff;
+    padding: 3rem;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    height: 100%;
+}
+
+.statItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.statNumber {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #E84B8A;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.statLabel {
+    font-size: 0.9rem;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+/* Mission Row Styles */
+.missionRow {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    gap: 3rem;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 400px;
+}
+
+.missionContent {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.missionContent h2 {
+    font-size: 2.5rem;
+    color: #E84B8A;
+    position: relative;
+    padding-bottom: 0.5rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+.missionContent h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: #E84B8A;
+}
+
+.missionContent p {
+    line-height: 1.8;
+    color: #000;
+    font-size: 1.1rem;
+    margin: 0;
+    padding-right: 2rem;
+}
+
+.missionContent ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.missionContent li {
+    font-size: 1.1rem;
+    margin: 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.missionContent li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #E84B8A;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .topRow {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .missionRow {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .missionImage {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .statsCard {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .statNumber {
+        font-size: 3rem;
+    }
+
+    .missionContent {
+        padding: 2rem;
+    }
+
+    .logo {
+        width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pageContainer {
+        padding: 1rem;
+    }
+    
+    .subtitle {
+        font-size: 1.5rem;
+    }
+    
+    .infoCard h2 {
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        width: 200px;
+    }
+    
+    .headerSection {
+        padding: 2rem 0;
+    }
+}

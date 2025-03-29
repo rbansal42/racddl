@@ -3,13 +3,14 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
 const navItems = [
   { name: 'About Us', path: '/about' },
-  { name: 'Gallery', path: '/gallery' },
+  //{ name: 'Gallery', path: '/gallery' },
   { name: 'Team', path: '/team' },
-  { name: 'Legacy', path: '/legacy' },
-  { name: 'Contact', path: '/contact' },
+  { name: 'Projects', path: '/projects' },
+  //{ name: 'Contact', path: '/contact' },
 ];
 
 const Header = () => {
@@ -29,8 +30,14 @@ const Header = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.4, delay: 0.1 }}
           >
-            <Link href="/" className="text-2xl font-semibold text-amber-600">
-              Rotaract Club
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/ClubLogo.png"
+                alt="Rotaract Club Logo"
+                width={40}
+                height={40}
+                className="object-contain"
+              />
             </Link>
           </motion.div>
 
@@ -62,12 +69,14 @@ const Header = () => {
               whileTap={{ y: 0 }}
               transition={{ duration: 0.2 }}
             >
-              <Link 
-                href="/join"
+              <a 
+                href="https://forms.gle/rbGc8Xm2WnTJc2RE8"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-blue-600 text-white px-5 py-2 rounded-full text-[15px] font-medium hover:bg-blue-700 transition-colors"
               >
                 Join Us
-              </Link>
+              </a>
             </motion.div>
           </nav>
 

@@ -1,0 +1,237 @@
+/* Page Container */
+.pageContainer {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, rgba(245, 245, 220, 0.95), rgba(245, 245, 220, 0.95));
+  position: relative;
+  color: #2F4F4F;
+  padding: 2rem 1rem;
+}
+
+/* Header Section */
+.headerSection {
+  text-align: center;
+  padding: 3rem 2rem;
+  margin: 0 auto 3rem;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logoContainer {
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  width: 220px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  color: #2F4F4F;
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Image Grid Section */
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding: 0;
+}
+
+.imageContainer {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.imageContainer:hover {
+  transform: translateY(-5px);
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imageOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(47, 79, 79, 0.8), rgba(47, 79, 79, 0.4));
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.imageTitle {
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Content Sections */
+.contentSection {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+}
+
+.textBox {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  color: #2F4F4F;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #3D7B7B;
+  border-radius: 2px;
+}
+
+.sectionText {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #2F4F4F;
+  margin-bottom: 2rem;
+}
+
+.initiativeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.initiativeItem {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(61, 123, 123, 0.2);
+}
+
+.initiativeItem:hover {
+  transform: translateY(-5px);
+}
+
+.initiativeItem h3 {
+  color: #2F4F4F;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.initiativeItem p {
+  color: #2F4F4F;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.impactList {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 2rem;
+}
+
+.impactList li {
+  color: #2F4F4F;
+  font-size: 1.1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(61, 123, 123, 0.2);
+  display: flex;
+  align-items: center;
+}
+
+.impactList li::before {
+  content: '•';
+  color: #3D7B7B;
+  font-weight: bold;
+  margin-right: 0.75rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .imageGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .pageContainer {
+    padding: 1rem;
+  }
+
+  .headerSection {
+    padding: 2rem 1rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+
+  .imageGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .initiativeGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .impactList {
+    grid-template-columns: 1fr;
+  }
+
+  .textBox {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .imageGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .initiativeGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+}

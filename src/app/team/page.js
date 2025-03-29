@@ -37,9 +37,111 @@ const Team = () => {
         {
           name: "Chirangini Oberoi",
           position: "Cheif-Aid to President",
-          image: "/maanya.png", // Dummy image
+          image: "/chirangini.png", // Dummy image
         },
       ];
+
+      const advisors = [
+        {
+          name: "Advisor 1",
+          position: "Senior Advisor",
+          image: "rahul.png", // Dummy image
+        },
+        {
+          name: "Advisor 2",
+          position: "Senior Advisor",
+          image: "rahul.png", // Dummy image
+        },
+        {
+          name: "Advisor 3",
+          position: "Senior Advisor",
+          image: "rahul.png", // Dummy image
+        },
+        {
+          name: "Advisor 4",
+          position: "Senior Advisor",
+          image: "rahul.png", // Dummy image
+        },
+      ];
+
+
+  const directors = [
+    {
+      name: "Director 1",
+      position: "Director",
+      image: "rahul.png", // Dummy image
+    },
+    {
+      name: "Director 2",
+      position: "Director",
+      image: "rahul.png", // Dummy image
+    },
+    {
+      name: "Director 3",
+      position: "Director",
+      image: "rahul.png", // Dummy image
+    },
+    {
+      name: "Director 4",
+      position: "Director",
+      image: "rahul.png", // Dummy image
+    },
+    {
+      name: "Director 5",
+      position: "Director",
+      image: "rahul.png", // Dummy image
+    },
+    {
+        name: "Director 6",
+        position: "Director",
+        image: "rahul.png", // Dummy image
+      },
+      {
+        name: "Director 7",
+        position: "Director",
+        image: "rahul.png", // Dummy image
+      },
+      {
+        name: "Director 8",
+        position: "Director",
+        image: "rahul.png", // Dummy image
+      },
+      {
+        name: "Director 9",
+        position: "Director",
+        image: "rahul.png", // Dummy image
+      },
+      {
+        name: "Director 10",
+        position: "Director",
+        image: "rahul.png", // Dummy image
+      },
+      {
+        name: "Director 11",
+        position: "Director",
+        image: "rahul.png", // Dummy image
+      },
+      {
+        name: "Director 12",
+        position: "Director",
+        image: "rahul.png", // Dummy image
+      },
+      {
+        name: "Director 13",
+        position: "Director",
+        image: "rahul.png", // Dummy image
+      },
+      {
+        name: "Director 14",
+        position: "Director",
+        image: "rahul.png", // Dummy image
+      },
+      {
+        name: "Director 15",
+        position: "Director",
+        image: "rahul.png", // Dummy image
+      },
+    ];
   
     return (
       <div className={styles.teamContainer}>
@@ -67,7 +169,32 @@ const Team = () => {
           </div>
         ))}
       </div>
+
+      
+      {/* Advisory Section */}
+      <h1 className={styles.subheading}>Club Advisory</h1>
+      <div className={styles.advisoryGrid}>
+        {advisors.map((advisor, index) => (
+          <div className={styles.advisoryMember} key={index}>
+            <img src={advisor.image} alt={advisor.name} className={styles.advisoryImage} />
+            <h2 className={styles.advisoryName}>{advisor.name}</h2>
+            <h3 className={styles.advisoryPosition}>{advisor.position}</h3>
+          </div>
+        ))}
       </div>
+
+      {/* Board of Directors Section */}
+      <h1 className={styles.subheading}>Board of Directors</h1>
+      <div className={styles.directorGrid}>
+        {directors.map((director, index) => (
+          <div className={styles.directorMember} key={index}>
+            <img src={director.image} alt={director.name} className={styles.directorImage} />
+            <h2 className={styles.directorName}>{director.name}</h2>
+            <h3 className={styles.directorPosition}>{director.position}</h3>
+          </div>
+        ))}
+      </div>
+    </div>
     );
   };
 

@@ -1,66 +1,84 @@
 .teamContainer {
   padding: 4rem 2rem;
   text-align: center;
-  background: linear-gradient(135deg, #0a051b, #1e1e2f, #190138); /* Static gradient background */
+  background: #F7F4F3;
 }
 
 .heading {
-  font-size: 4.5rem; /* Increased font size */
+  font-size: 4rem;
   font-weight: 800;
-  margin-bottom: 4rem; /* Increased margin for more space below */
-  color: #e2e8f0;
-  text-shadow: 0 0 30px rgba(149, 150, 211, 0.5); /* Added text shadow for depth */
+  margin-bottom: 2rem;
+  color: #5B2333;
+  margin-top: 2rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  text-shadow: 0 0 30px rgba(91, 35, 51, 0.2);
+}
+
+.subheading {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  margin-top: 4rem;
+  color: #5B2333;
+  text-shadow: 0 0 30px rgba(91, 35, 51, 0.2);
 }
 
 .teamGrid {
-  display: flex; /* Use flexbox for side-by-side layout */
-  justify-content: space-around; /* Space out the grids */
-  gap: 2rem; /* Adjusted gap for better spacing */
-  margin: 0 2rem; /* Added margin for equal spacing on sides */
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  margin: 0 2rem;
 }
 
 .teamMember {
-  display: flex; /* Use flexbox for horizontal layout */
-  align-items: center; /* Center items vertically */
-  background: rgba(255, 255, 255, 0.1); /* Light background for contrast */
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
   border-radius: 15px;
-  padding: 1rem; /* Adjusted padding */
-  width: 750px; /* Increased width for uniformity */
-  height: 400px; /* Set a fixed height for uniformity */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  padding: 1rem;
+  width: 750px;
+  height: 400px;
+  box-shadow: 0 4px 15px rgba(91, 35, 51, 0.15);
+  border: 1px solid rgba(91, 35, 51, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.teamMember:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(91, 35, 51, 0.2);
 }
 
 .memberImage {
-  border-radius: 15px; /* Rounded corners for the image */
-  width: 320px; /* Adjusted width for the image */
-  height: auto; /* Set a fixed height for the image */
-  object-fit: cover; /* Maintain aspect ratio */
-  margin: 0; /* Remove spacing around the image */
+  border-radius: 15px;
+  width: 320px;
+  height: auto;
+  object-fit: cover;
+  margin: 0;
 }
 
 .memberInfo {
-  text-align: left; /* Align text to the left */
-  margin-left: 20px; /* Move text to the right slightly */
+  text-align: left;
+  margin-left: 20px;
 }
 
 .memberName {
-  font-size: 2rem; /* Adjusted font size */
+  font-size: 2rem;
   font-weight: 700;
-  color: #ffffff; /* White color for better contrast */
-  margin-top: 10px; /* Space above the name */
-  text-shadow: 0 0 5px rgba(99, 102, 241, 0.5); /* Added text shadow for depth */
+  color: #5B2333;
+  margin-top: 10px;
+  text-shadow: 0 0 5px rgba(91, 35, 51, 0.1);
 }
 
 .memberPosition {
-  font-size: 1.2rem; /* Adjusted font size */
-  color: #e2e8f0;
-  margin: 0.5rem 0; /* Space around position */
+  font-size: 1.2rem;
+  color: #8B4B5B;
+  margin: 0.5rem 0;
 }
 
 .memberDescription {
-  color: #a0aec0;
+  color: #A66B7B;
   line-height: 1.5;
-  margin-top: 0.5rem; /* Space above description */
+  margin-top: 0.5rem;
 }
 
 .coreTeamGrid {
@@ -78,46 +96,140 @@
   align-items: center; /* Center items horizontally */
   width: 150px; /* Set width for the square container */
 }
+
 .squareContainer {
-    background: linear-gradient(180deg, #7d7693, #2b2b5c, #190138);
-    border-radius: 10px;
-    padding: 1rem;
-    width: 300px;
-    height: 190px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative; /* Ensures child elements are positioned relative to this */
-    z-index: 1; /* Keep it below the image */
-    margin-top: 140px; /* Adjust spacing */
-  }
-  
-  .coreMemberImage {
-    margin-top: 80px;
-    width: 350px; /* Adjust size */
-    height: auto; /* Adjust size */
-    object-fit: cover;
-    position: absolute; /* Position relative to .squareContainer */
-    top: -60px; /* Moves it up to overlap */
-    left: 40%; /* Centers it */
-    transform: translateX(-50%); /* Ensures proper centering */
-    z-index: 2; /* Places it above the container */
-    border-radius: 50%; /* If you want it circular */
-  }
-  
+  background: linear-gradient(180deg, #5B2333, #8B4B5B);
+  border-radius: 10px;
+  padding: 1rem;
+  width: 300px;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  margin-top: 140px;
+  box-shadow: 0 4px 15px rgba(91, 35, 51, 0.2);
+}
+
+.coreMemberImage {
+  margin-top: 80px;
+  width: 350px;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: -60px;
+  left: 40%;
+  transform: translateX(-50%);
+  z-index: 2;
+  border-radius: 50%;
+  border: 4px solid #F7F4F3;
+  box-shadow: 0 4px 15px rgba(91, 35, 51, 0.2);
+}
 
 .coreMemberName {
-  font-size: 1.8rem; /* Adjusted font size */
+  font-size: 1.8rem;
   font-weight: 700;
-  color: #ffffff; /* White color for better contrast */
-  margin-top: 40px; /* No margin */
-  text-align: center; /* Center text */
+  color: #F7F4F3;
+  margin-top: 40px;
+  text-align: center;
 }
 
 .coreMemberPosition {
-  font-size: 1.2rem; /* Adjusted font size */
-  color: #b2c4dc;
-  margin: 0; /* No margin */
-  text-align: center; /* Center text */
+  font-size: 1.3rem;
+  color: rgba(247, 244, 243, 0.9);
+  margin: 0;
+  text-align: center;
+}
+
+.advisoryGrid {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.advisoryMember {
+  background: #FFFFFF;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(91, 35, 51, 0.15);
+  border: 1px solid rgba(91, 35, 51, 0.1);
+  margin: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.advisoryMember:hover {
+  transform: translateY(-5px);
+}
+
+.advisoryImage {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border: 4px solid #F7F4F3;
+  box-shadow: 0 4px 15px rgba(91, 35, 51, 0.2);
+}
+
+.advisoryName {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #5B2333;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.advisoryPosition {
+  font-size: 1.3rem;
+  color: #8B4B5B;
+  margin: 0;
+  text-align: center;
+}
+
+.directorGrid {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.directorMember {
+  background: #FFFFFF;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(91, 35, 51, 0.15);
+  border: 1px solid rgba(91, 35, 51, 0.1);
+  margin: 1rem;
+  width: 18%;
+  transition: transform 0.3s ease;
+}
+
+.directorMember:hover {
+  transform: translateY(-5px);
+}
+
+.directorImage {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 4px solid #F7F4F3;
+  box-shadow: 0 4px 15px rgba(91, 35, 51, 0.2);
+}
+
+.directorName {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #5B2333;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.directorPosition {
+  font-size: 1.3rem;
+  color: #8B4B5B;
+  margin: 0;
+  text-align: center;
 }
