@@ -41,28 +41,28 @@ const TeamClient = () => {
         },
       ];
 
-      const advisors = [
-        {
-          name: "Advisor 1",
-          position: "Senior Advisor",
-          image: "/rahul.png", // Dummy image
-        },
-        {
-          name: "Advisor 2",
-          position: "Senior Advisor",
-          image: "/rahul.png", // Dummy image
-        },
-        {
-          name: "Advisor 3",
-          position: "Senior Advisor",
-          image: "/rahul.png", // Dummy image
-        },
-        {
-          name: "Advisor 4",
-          position: "Senior Advisor",
-          image: "/rahul.png", // Dummy image
-        },
-      ];
+      // const advisors = [
+      //   {
+      //     name: "Advisor 1",
+      //     position: "Senior Advisor",
+      //     image: "/rahul.png", // Dummy image
+      //   },
+      //   {
+      //     name: "Advisor 2",
+      //     position: "Senior Advisor",
+      //     image: "/rahul.png", // Dummy image
+      //   },
+      //   {
+      //     name: "Advisor 3",
+      //     position: "Senior Advisor",
+      //     image: "/rahul.png", // Dummy image
+      //   },
+      //   {
+      //     name: "Advisor 4",
+      //     position: "Senior Advisor",
+      //     image: "/rahul.png", // Dummy image
+      //   },
+      // ];
 
 
   // const directors = [
