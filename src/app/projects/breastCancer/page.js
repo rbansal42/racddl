@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import styles from './breastCancer.module.css';
-
+import Image from 'next/image';
 const images = [
     "/bcancer1.jpg",
     "/bcancer2.jpg",
@@ -32,7 +32,7 @@ const BreastCancer = () => {
             {/* Header Section */}
             <div className={styles.headerSection}>
                 <div className={styles.logoContainer}>
-                    <img src="/BreastCancerActionGroup-logo.png" alt="Breast Cancer Awareness Logo" className={styles.logo} />
+                    <Image src="/breastCancer/logo.png" alt="Breast Cancer Awareness Logo" width={400} height={100}/>
                 </div>
                 <h2 className={styles.subtitle}>Early Detection Saves Lives</h2>
             </div>

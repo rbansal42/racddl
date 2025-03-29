@@ -12,7 +12,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: #fff;
+    background: rgba(255, 228, 230, 0.95);
     z-index: 1;
 }
 
