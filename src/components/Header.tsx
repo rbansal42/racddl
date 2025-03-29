@@ -34,8 +34,8 @@ const Header = () => {
               <Image
                 src="/ClubLogo.png"
                 alt="Rotaract Club Logo"
-                width={40}
-                height={40}
+                width={150}
+                height={150}
                 className="object-contain"
               />
             </Link>
