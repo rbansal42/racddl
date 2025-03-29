@@ -7,13 +7,13 @@ const TeamClient = () => {
       {
         name: "Rtr. Rajat Kapoor",
         position: "Immediate Past President",
-        image: "rajat.png",
+        image: "/rajat.png",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       },
       {
         name: "Ayush Aggarwal",
         position: "Club President",
-        image: "ayush.png",
+        image: "/ayush.png",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       },
     ];
@@ -45,103 +45,103 @@ const TeamClient = () => {
         {
           name: "Advisor 1",
           position: "Senior Advisor",
-          image: "rahul.png", // Dummy image
+          image: "/rahul.png", // Dummy image
         },
         {
           name: "Advisor 2",
           position: "Senior Advisor",
-          image: "rahul.png", // Dummy image
+          image: "/rahul.png", // Dummy image
         },
         {
           name: "Advisor 3",
           position: "Senior Advisor",
-          image: "rahul.png", // Dummy image
+          image: "/rahul.png", // Dummy image
         },
         {
           name: "Advisor 4",
           position: "Senior Advisor",
-          image: "rahul.png", // Dummy image
+          image: "/rahul.png", // Dummy image
         },
       ];
 
 
-  const directors = [
-    {
-      name: "Director 1",
-      position: "Director",
-      image: "rahul.png", // Dummy image
-    },
-    {
-      name: "Director 2",
-      position: "Director",
-      image: "rahul.png", // Dummy image
-    },
-    {
-      name: "Director 3",
-      position: "Director",
-      image: "rahul.png", // Dummy image
-    },
-    {
-      name: "Director 4",
-      position: "Director",
-      image: "rahul.png", // Dummy image
-    },
-    {
-      name: "Director 5",
-      position: "Director",
-      image: "rahul.png", // Dummy image
-    },
-    {
-        name: "Director 6",
-        position: "Director",
-        image: "rahul.png", // Dummy image
-      },
-      {
-        name: "Director 7",
-        position: "Director",
-        image: "rahul.png", // Dummy image
-      },
-      {
-        name: "Director 8",
-        position: "Director",
-        image: "rahul.png", // Dummy image
-      },
-      {
-        name: "Director 9",
-        position: "Director",
-        image: "rahul.png", // Dummy image
-      },
-      {
-        name: "Director 10",
-        position: "Director",
-        image: "rahul.png", // Dummy image
-      },
-      {
-        name: "Director 11",
-        position: "Director",
-        image: "rahul.png", // Dummy image
-      },
-      {
-        name: "Director 12",
-        position: "Director",
-        image: "rahul.png", // Dummy image
-      },
-      {
-        name: "Director 13",
-        position: "Director",
-        image: "rahul.png", // Dummy image
-      },
-      {
-        name: "Director 14",
-        position: "Director",
-        image: "rahul.png", // Dummy image
-      },
-      {
-        name: "Director 15",
-        position: "Director",
-        image: "rahul.png", // Dummy image
-      },
-    ];
+  // const directors = [
+  //   {
+  //     name: "Director 1",
+  //     position: "Director",
+  //     image: "/rahul.png", // Dummy image
+  //   },
+  //   {
+  //     name: "Director 2",
+  //     position: "Director",
+  //     image: "/rahul.png", // Dummy image
+  //   },
+  //   {
+  //     name: "Director 3",
+  //     position: "Director",
+  //     image: "/rahul.png", // Dummy image
+  //   },
+  //   {
+  //     name: "Director 4",
+  //     position: "Director",
+  //     image: "/rahul.png", // Dummy image
+  //   },
+  //   {
+  //     name: "Director 5",
+  //     position: "Director",
+  //     image: "/rahul.png", // Dummy image
+  //   },
+  //   {
+  //       name: "Director 6",
+  //       position: "Director",
+  //       image: "/rahul.png", // Dummy image
+  //     },
+  //     {
+  //       name: "Director 7",
+  //       position: "Director",
+  //       image: "/rahul.png", // Dummy image
+  //     },
+  //     {
+  //       name: "Director 8",
+  //       position: "Director",
+  //       image: "/rahul.png", // Dummy image
+  //     },
+  //     {
+  //       name: "Director 9",
+  //       position: "Director",
+  //       image: "/rahul.png", // Dummy image
+  //     },
+  //     {
+  //       name: "Director 10",
+  //       position: "Director",
+  //       image: "/rahul.png", // Dummy image
+  //     },
+  //     {
+  //       name: "Director 11",
+  //       position: "Director",
+  //       image: "/rahul.png", // Dummy image
+  //     },
+  //     {
+  //       name: "Director 12",
+  //       position: "Director",
+  //       image: "/rahul.png", // Dummy image
+  //     },
+  //     {
+  //       name: "Director 13",
+  //       position: "Director",
+  //       image: "/rahul.png", // Dummy image
+  //     },
+  //     {
+  //       name: "Director 14",
+  //       position: "Director",
+  //       image: "/rahul.png", // Dummy image
+  //     },
+  //     {
+  //       name: "Director 15",
+  //       position: "Director",
+  //       image: "/rahul.png", // Dummy image
+  //     },
+  //   ];
   
     return (
       <div className={styles.teamContainer}>
@@ -184,7 +184,7 @@ const TeamClient = () => {
 
       
       {/* Advisory Section */}
-      <h1 className={styles.subheading}>Club Advisory</h1>
+      {/* <h1 className={styles.subheading}>Club Advisory</h1>
       <div className={styles.advisoryGrid}>
         {advisors.map((advisor, index) => (
           <div className={styles.advisoryMember} key={index}>
@@ -199,10 +199,10 @@ const TeamClient = () => {
             <h3 className={styles.advisoryPosition}>{advisor.position}</h3>
           </div>
         ))}
-      </div>
+      </div> */}
 
       {/* Directors Section */}
-      <h1 className={styles.subheading}>Board of Directors</h1>
+      {/* <h1 className={styles.subheading}>Board of Directors</h1>
       <div className={styles.directorsGrid}>
         {directors.map((director, index) => (
           <div className={styles.directorMember} key={index}>
@@ -217,7 +217,7 @@ const TeamClient = () => {
             <h3 className={styles.directorPosition}>{director.position}</h3>
           </div>
         ))}
-      </div>
+      </div> */}
       </div>
     );
   };
