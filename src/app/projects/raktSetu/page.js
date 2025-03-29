@@ -1,10 +1,23 @@
 "use client";
 import React from 'react';
+import { motion } from 'framer-motion';
 import styles from './raktSetu.module.css';
+import Image from 'next/image';
 
 const RaktSetu = () => {
     return (
         <div className={styles.pageContainer}>
+            {/* Background Image */}
+            <div className={styles.backgroundImageContainer}>
+                <Image
+                    src="/projects/raktSetu/raktSetu-bg.png"
+                    alt="RaktSetu Background"
+                    fill
+                    className={styles.backgroundImage}
+                    priority
+                    quality={100}
+                />
+            </div>
             <div className={styles.backgroundOverlay}></div>
 
             {/* Header Section */}

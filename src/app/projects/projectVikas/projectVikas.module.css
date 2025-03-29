@@ -1,9 +1,22 @@
 .pageContainer {
     min-height: 100vh;
-    background: url('/projectVikas-bg.jpg') center center / cover no-repeat fixed;
     position: relative;
     padding: 2rem;
     color: #000;
+}
+
+.backgroundImageContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.backgroundImage {
+    object-fit: cover;
+    object-position: center;
 }
 
 .backgroundOverlay {
@@ -31,10 +44,14 @@
     width: 100%;
 }
 
-.logo {
+.logoWrapper {
+    position: relative;
     width: 500px;
-    height: auto;
-    display: block;
+    height: 150px;
+}
+
+.logo {
+    object-fit: contain;
 }
 
 .subtitle {
@@ -50,30 +67,28 @@
     overflow: hidden;
     position: relative;
     z-index: 2;
-    margin: 2rem 0;
-    background: #ffffff8c;
-    padding: 2rem 0;
-    border-radius: 16px;
 }
 
 .imageSlider {
-    width: 100%;
-    overflow: hidden;
+    display: flex;
+    width: fit-content;
 }
 
 .imageTrack {
     display: flex;
-    gap: 20px;
-    width: fit-content;
-    padding: 0 10px;
+    gap: 2rem;
+}
+
+.sliderImageWrapper {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    flex-shrink: 0;
 }
 
 .sliderImage {
-    height: 300px;
-    width: 450px;
     object-fit: cover;
-    border-radius: 12px;
-    flex-shrink: 0;
+    border-radius: 8px;
 }
 
 .contentSection {

@@ -29,7 +29,17 @@ const images = [
 const Unnati = () => {
   return (
     <div className={styles.pageContainer}>
-      {/* Background Overlay */}
+      {/* Background Image */}
+      <div className={styles.backgroundImageContainer}>
+        <Image
+          src="/unnati-bg.jpg"
+          alt="Unnati Background"
+          fill
+          className={styles.backgroundImage}
+          priority
+          quality={100}
+        />
+      </div>
       <div className={styles.backgroundOverlay}></div>
 
       {/* Header Section */}

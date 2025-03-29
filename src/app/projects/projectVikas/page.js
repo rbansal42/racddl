@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import styles from './projectVikas.module.css';
+import Image from 'next/image';
 
 const images = [
     "/slide1.jpg",
@@ -27,12 +28,32 @@ const scrollVariants = {
 const ProjectVikas = () => {
     return (
         <div className={styles.pageContainer}>
+            {/* Background Image */}
+            <div className={styles.backgroundImageContainer}>
+                <Image
+                    src="/projectVikas-bg.jpg"
+                    alt="Project Vikas Background"
+                    fill
+                    className={styles.backgroundImage}
+                    priority
+                    quality={100}
+                />
+            </div>
             <div className={styles.backgroundOverlay}></div>
 
             {/* Header Section */}
             <div className={styles.headerSection}>
                 <div className={styles.logoContainer}>
-                    <img src="/projectVikas-logo1.png" alt="Project Vikas Logo" className={styles.logo} />
+                    <div className={styles.logoWrapper}>
+                        <Image
+                            src="/projectVikas-logo1.png"
+                            alt="Project Vikas Logo"
+                            width={500}
+                            height={150}
+                            className={styles.logo}
+                            priority
+                        />
+                    </div>
                 </div>
                 <h2 className={styles.subtitle}>Empowering Through Education</h2>
             </div>
@@ -47,15 +68,39 @@ const ProjectVikas = () => {
                     <div className={styles.imageTrack}>
                         {/* First set of images */}
                         {images.map((img, index) => (
-                            <img key={`first-${index}`} src={img} className={styles.sliderImage} alt="Project Activities" />
+                            <div key={`first-${index}`} className={styles.sliderImageWrapper}>
+                                <Image
+                                    src={img}
+                                    alt="Project Activities"
+                                    width={400}
+                                    height={300}
+                                    className={styles.sliderImage}
+                                />
+                            </div>
                         ))}
                         {/* Second set of images */}
                         {images.map((img, index) => (
-                            <img key={`second-${index}`} src={img} className={styles.sliderImage} alt="Project Activities" />
+                            <div key={`second-${index}`} className={styles.sliderImageWrapper}>
+                                <Image
+                                    src={img}
+                                    alt="Project Activities"
+                                    width={400}
+                                    height={300}
+                                    className={styles.sliderImage}
+                                />
+                            </div>
                         ))}
                         {/* Third set for smooth transition */}
                         {images.map((img, index) => (
-                            <img key={`third-${index}`} src={img} className={styles.sliderImage} alt="Project Activities" />
+                            <div key={`third-${index}`} className={styles.sliderImageWrapper}>
+                                <Image
+                                    src={img}
+                                    alt="Project Activities"
+                                    width={400}
+                                    height={300}
+                                    className={styles.sliderImage}
+                                />
+                            </div>
                         ))}
                     </div>
                 </motion.div>
@@ -109,7 +154,12 @@ const ProjectVikas = () => {
                         </ul>
                     </div>
                     <div className={styles.missionImage}>
-                        <img src="/slide1.jpg" alt="Students Learning" />
+                        <Image
+                            src="/slide1.jpg"
+                            alt="Students Learning"
+                            width={400}
+                            height={300}
+                        />
                     </div>
                 </div>
             </div>
