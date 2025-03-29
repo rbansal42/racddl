@@ -173,18 +173,31 @@ export default function Home() {
 
         {/* Banner Section */}
         <section className="px-4 py-12 bg-white">
-          <div className="container mx-auto max-w-4xl">
+          <div className="container mx-auto max-w-6xl">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="bg-[#5B2333] rounded-2xl shadow-xl px-8 py-10 text-center text-white mx-4 transform hover:shadow-2xl transition-all duration-300"
+              className="bg-[#5B2333] rounded-2xl shadow-xl p-8 text-white mx-4 transform hover:shadow-2xl transition-all duration-300"
             >
-              <h2 className="text-2xl md:text-3xl font-semibold leading-relaxed">
-                The only self-sponsored club<br />
-                of<br />
-                RID 3011
-              </h2>
+              <div className="flex flex-col md:flex-row items-center gap-8">
+                <div className="flex-1 text-center md:text-left">
+                  <h2 className="text-3xl md:text-4xl font-bold">
+                    The only self-sponsored club of RID 3011
+                  </h2>
+                </div>
+                <div className="flex-1 w-full md:w-auto">
+                  <div className="relative w-full h-64 md:h-48 rounded-lg overflow-hidden shadow-lg">
+                    <Image
+                      src="/charter-certificate.jpg"
+                      alt="Charter Certificate"
+                      fill
+                      className="object-cover"
+                      priority
+                    />
+                  </div>
+                </div>
+              </div>
             </motion.div>
           </div>
         </section>
