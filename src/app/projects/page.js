@@ -1,9 +1,9 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Masonry from 'react-masonry-css';
 import { useRouter } from 'next/navigation';
 import styles from './projects.module.css';
-import EcoSevika from './ecosevika/page';
+// import EcoSevika from './ecosevika/page';
 import Image from 'next/image';
 
 const projectCards = [

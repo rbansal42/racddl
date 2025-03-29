@@ -24,7 +24,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">About Rotaract</h3>
             <p className="text-gray-300">
-              Rotaract is a service club for young people ages 18 to 30 who are dedicated to finding innovative solutions to the world's most pressing challenges.
+              Rotaract is a service club for young people ages 18 to 30 who are dedicated to finding innovative solutions to the world&apos;s most pressing challenges.
             </p>
           </div>
 

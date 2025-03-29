@@ -233,7 +233,7 @@ export default function Home() {
                 Our vision embodies our commitment to making lasting positive change in our communities. Through innovative projects, sustainable initiatives, and collaborative efforts, we strive to build a better tomorrow for everyone.
               </p>
               <p className="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
-                This vision drives us to develop leadership skills, foster meaningful connections, and implement projects that create real, sustainable impact. Together, we're not just imagining a better future - we're actively creating it.
+                This vision drives us to develop leadership skills, foster meaningful connections, and implement projects that create real, sustainable impact. Together, we&apos;re not just imagining a better future - we&apos;re actively creating it.
               </p>
             </motion.div>
           </div>

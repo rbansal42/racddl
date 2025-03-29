@@ -158,7 +158,7 @@ const About = () => {
           <div className="flex-1">
             <h2 className="text-3xl font-bold text-[#5B2333] mb-4">CHARTER PRESIDENT</h2>
             <p className="text-gray-700 text-lg leading-relaxed">
-              Under the visionary leadership of our Charter President, Rotaract Club of Delhi Dynamic Leaders has emerged as one of the most active and impactful clubs in District 3011. His dedication to service and commitment to excellence has set the foundation for our club's remarkable achievements since our chartering in July 2023.
+              Under the visionary leadership of our Charter President, Rotaract Club of Delhi Dynamic Leaders has emerged as one of the most active and impactful clubs in District 3011. His dedication to service and commitment to excellence has set the foundation for our club&apos;s remarkable achievements since our chartering in July 2023.
             </p>
           </div>
         </motion.section>
