@@ -13,12 +13,12 @@ const images = [
   
   const scrollVariants = {
     animate: {
-      x: ["0%", "-100%"],
+      x: ["0%", "-13.33%"],
       transition: {
         x: {
           repeat: Infinity,
           repeatType: "loop",
-          duration: 30,
+          duration: 20,
           ease: "linear",
           repeatDelay: 0
         },
@@ -59,7 +59,7 @@ const Unnati = () => {
             {images.map((img, index) => (
               <img key={`second-${index}`} src={img} className={styles.sliderImage} alt="Project Action" />
             ))}
-            {/* Third set of images for smoother transition */}
+            {/* Third set of images for seamless loop */}
             {images.map((img, index) => (
               <img key={`third-${index}`} src={img} className={styles.sliderImage} alt="Project Action" />
             ))}
