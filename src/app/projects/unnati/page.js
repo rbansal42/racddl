@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import styles from './unnati.module.css';
+import Image from 'next/image';
 
 const images = [
     "/slide1.jpg",
@@ -34,7 +35,7 @@ const Unnati = () => {
       {/* Header Section */}
       <div className={styles.headerSection}>
         <div className={styles.logoContainer}>
-          <img src="/unnati-logo.png" alt="Unnati Logo" className={styles.logo} />
+          <Image src="/unnati/unnati-logo.png" alt="Unnati Logo" width={200} height={100}/>
         </div>
        
         <h2 className={styles.subtitle}>Save the Environment, Spread Education</h2>
@@ -126,31 +127,31 @@ const Unnati = () => {
         <div className={styles.partnersGrid}>
           <div className={styles.partnerCard}>
             <div className={styles.logoPlaceholder}>
-              <img src="/slide1.jpg" alt="Bal Bhawan International School" />
+              <img src="/unnati/partners/Bal Bhavan.png" alt="Bal Bhawan International School" />
             </div>
             <p>Bal Bhawan International School, Dwarka</p>
           </div>
           <div className={styles.partnerCard}>
             <div className={styles.logoPlaceholder}>
-              <img src="/slide2.jpg" alt="NC Jindal Public School" />
+              <img src="/unnati/partners/NC Jindal.png" alt="NC Jindal Public School" />
             </div>
             <p>NC Jindal Public School, Punjabi Bagh</p>
           </div>
           <div className={styles.partnerCard}>
             <div className={styles.logoPlaceholder}>
-              <img src="/slide3.jpg" alt="The Maurya School" />
+              <img src="/unnati/partners/The Maurya.png" alt="The Maurya School" />
             </div>
             <p>The Maurya School,<br />F-Block, Palam Vihar, Gurgaon</p>
           </div>
           <div className={styles.partnerCard}>
             <div className={styles.logoPlaceholder}>
-              <img src="/slide1.jpg" alt="Amity International School" />
+              <img src="/unnati/partners/Amity International.png" alt="Amity International School" />
             </div>
             <p>Amity International School, Sector 43, Gurugram</p>
           </div>
           <div className={styles.partnerCard}>
             <div className={styles.logoPlaceholder}>
-              <img src="/slide2.jpg" alt="Army Public School" />
+              <img src="/unnati/partners/Army Public School.png" alt="Army Public School" />
             </div>
             <p>Army Public School, Delhi Cantt</p>
           </div>

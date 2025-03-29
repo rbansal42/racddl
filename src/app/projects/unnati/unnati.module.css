@@ -25,11 +25,21 @@
 
 .logoContainer {
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
-  width: 150px;
+  width: 200px;
   height: auto;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
 }
 
 .mainTitle {
@@ -138,7 +148,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('/crumpled-paper.jpg') center center;
   background-size: cover;
   opacity: 0.9;
   pointer-events: none;
