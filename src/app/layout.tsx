@@ -24,11 +24,19 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Add safe class name generation to handle potential undefined values
+  const fontClasses = [
+    geistSans?.variable || "",
+    geistMono?.variable || "",
+    "antialiased",
+    "min-h-screen",
+    "flex",
+    "flex-col"
+  ].filter(Boolean).join(" ");
+
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
-      >
+      <body className={fontClasses}>
         <Header />
         <main className="flex-grow pt-20">
           {children}
